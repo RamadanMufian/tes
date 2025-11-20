@@ -1,69 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background: #444;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 1rem;
-            display: inline-block;
-        }
-        .container {
-            padding: 2rem;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Es Jeruk - Segar, Murah, Cepat!</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+    header { background: #ffb84d; padding: 20px; text-align: center; color: #fff; }
+    nav { background: #333; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    .menu-item { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    button { background: #ffb84d; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    footer { text-align: center; padding: 20px; background: #333; color: #fff; margin-top: 40px; }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Es Jeruk</h1>
+    <p>Segar, Murah, Cepat!</p>
+    <button onclick="location.href='#menu'">Lihat Menu</button>
+    <button onclick="location.href='https://wa.me/6281234567890'">Pesan Sekarang</button>
+  </header>
 
-<header>
-    <h1>Welcome to My Website</h1>
-</header>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#pesanan">Pesanan</a>
+    <a href="#ulasan">Ulasan</a>
+    <a href="#profil">Profil</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-</nav>
+  <section id="menu" class="section">
+    <h2>Menu Produk</h2>
+    <div class="menu-item">
+      <h3>Es Lemon — Rp 5.000</h3>
+      <p>Minuman segar dengan perasan lemon asli.</p>
+      <button onclick="location.href='#pesanan'">Pesan</button>
+    </div>
+    <div class="menu-item">
+      <h3>Es Jeruk Manis — Rp 5.000</h3>
+      <p>Kesegaran jeruk asli dengan rasa manis alami.</p>
+      <button onclick="location.href='#pesanan'">Pesan</button>
+    </div>
+  </section>
 
-<div class="container">
-    <h2>About Us</h2>
-    <p>This is a simple website template using HTML and CSS.</p>
-</div>
+  <section id="pesanan" class="section">
+    <h2>Detail Pesanan</h2>
+    <p>Pilih produk, tambahkan catatan, dan pesan langsung via WhatsApp.</p>
+    <button onclick="location.href='https://wa.me/6281234567890'">Pesan via WhatsApp</button>
+  </section>
 
-<footer>
-    <p>&copy; 2025 My Website. All Rights Reserved.</p>
-</footer>
+  <section id="ulasan" class="section">
+    <h2>Ulasan Pelanggan</h2>
+    <form>
+      <textarea placeholder="Tulis ulasan Anda..." style="width:100%;height:100px"></textarea><br /><br />
+      <button>Kirim Ulasan</button>
+    </form>
+    <div class="menu-item">
+      <p><strong>Budi:</strong> Enak dan segar banget!</p>
+    </div>
+  </section>
 
+  <section id="profil" class="section">
+    <h2>Profil Usaha</h2>
+    <p>Kami berdiri untuk menghadirkan minuman segar, murah, dan cepat untuk Anda.</p>
+    <p><strong>Visi:</strong> Menjadi pilihan utama minuman segar di Bengkulu.</p>
+    <p><strong>Misi:</strong> Memberikan kualitas terbaik dengan harga terjangkau.</p>
+  </section>
+
+  <section id="kontak" class="section">
+    <h2>Kontak & Lokasi</h2>
+    <p><strong>Alamat:</strong> Jalan WR Supratman, Muara Bangkahulu, Kota Bengkulu</p>
+    <p><strong>WhatsApp:</strong> 0812-3456-7890</p>
+    <p><strong>Jam Operasional:</strong> 09.00 - 21.00</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31829.1846..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Es Jeruk. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
